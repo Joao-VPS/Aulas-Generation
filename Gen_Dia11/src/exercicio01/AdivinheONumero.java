@@ -48,9 +48,9 @@ public class AdivinheONumero {
 			
 			if (sorteado != numeroDigitado) {
 				if (sorteado > numeroDigitado) {
-					System.out.printf("O número sorteado é maior do que %d\n", numeroDigitado);
+					System.out.printf("\033[0;33mO número sorteado é maior do que %d\033[0m\n", numeroDigitado);
 				} else {
-					System.out.printf("O número sorteado é menor do que %d\n", numeroDigitado);
+					System.out.printf("\033[0;33mO número sorteado é menor do que %d\033[0m\n", numeroDigitado);
 				}
 			}
 			
@@ -60,7 +60,7 @@ public class AdivinheONumero {
 		if (sorteado != numeroDigitado && numeroDigitado != -1) {
 			System.out.println("Sinto muito, você não conseguiu descobrir o número.");
 		} else if (numeroDigitado != -1){
-			System.out.printf("Parabéns! %d é o número certo!\n", sorteado);
+			System.out.printf("\033[0;32mParabéns! %d é o número certo!\n", sorteado);
 		}
 		
 		if (numeroDigitado != -1 && tentativas <= 10) {
@@ -74,5 +74,7 @@ public class AdivinheONumero {
 		} else {
 			System.out.println("Não houve vencedores. Mais sorte da próxima vez.");
 		}
+		
+		entrada.close();
 	}
 }
