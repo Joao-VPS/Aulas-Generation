@@ -1,8 +1,6 @@
 package exercicio01;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class ListaCores {
@@ -26,5 +24,7 @@ public class ListaCores {
 		cores.sort(null);
 		
 		for (String cor : cores) System.out.println(cor);
+		
+		entrada.close();
 	}
 }

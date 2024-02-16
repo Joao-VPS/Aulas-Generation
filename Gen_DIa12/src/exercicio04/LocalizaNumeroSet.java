@@ -26,6 +26,8 @@ public class LocalizaNumeroSet {
 		} else {
 			System.out.printf("O número %d não foi encontrado!", userNumber);
 		}
+		
+		entrada.close();
 	}
 
 }

@@ -21,5 +21,7 @@ public class ListarSet {
 		while (iNumeros.hasNext()) {
 			System.out.println(iNumeros.next());
 		}
+		
+		entrada.close();
 	}
 }
